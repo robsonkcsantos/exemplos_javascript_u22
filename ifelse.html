@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conceitos JS</title>
+
+	<script>
+		
+		/**
+		= ATRIBUIÇÃO 			| var x = 10
+		== igualdade de valores	| if ('100' == 100) true
+		=== igualdade de valores e tipo (100 === 100) false
+		!= diferente no valor   | if (10 != 20) true
+		!== diferente no valor e no tipo ('10' !== 20) true
+		> maior que
+		< menor que
+		>= maior e igual a
+		<= menor e igual a
+		*/
+
+		var nota = prompt('Digita a nota do aluno')
+
+		if (parseFloat(nota)==100) {
+			document.write('APROVADO com honra ao mérito')
+		} else if (parseFloat(nota)>=60) {
+			document.write('APROVADO')
+		} else if (parseFloat(nota)>=40) {
+			document.write('RECUPERACAO')
+		} else {
+			document.write('REPROVADO')
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

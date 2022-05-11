@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conceitos JS</title>
+
+	<script>
+
+		/**
+	E	&& todas deve ser verdadeiras para que o if seja true
+	OU	|| uma sendo verdadeiro para que o if seja true
+		!  inverte o resultado da expressao
+		*/
+
+		var nota = prompt('Digita a nota do aluno')
+		var falta = prompt('Informe o numero de faltas')
+
+		nota = parseFloat(nota) // nota  >= 60
+		falta = parseInt(falta) // falta <= 5
+	  
+		if (falta >= 5 || nota < 60) {  //  F 10 N 30 TRUE
+			document.write('REPROVADO') //  F 3  N 30 TRUE
+		} else { 						//  F 10 N 70 TRUE
+			document.write('APROVADO')	//	F 3  N 70 FALSE
+		} 
+	</script>
+</head>
+<body>
+
+</body>
+</html>
