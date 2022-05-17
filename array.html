@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conceitos JS</title>
+
+	<script>
+		
+		//lista de coisas para estudar
+		/*
+			- React
+			- Vue
+			- PHP
+			- MySQL
+			- Postgresql
+			- Python
+		*/
+		var itens = Array()
+		itens[0] = `react`
+		itens[1] = `vue`
+		itens[2] = `php`
+		itens[3] = `mysql`
+		itens[4] = `postgresql`
+		itens[5] = `python`
+
+		itens.push(`angular`)
+		itens.unshift(`SQL Server`)
+		itens.pop()
+		itens.shift()
+
+		console.log(itens.length)
+		console.log(`-----------------------`)
+		for (var x = 0; x < itens.length; x++) {
+			console.log(itens[x])
+		}
+		console.log(`-----------------------`)
+		for (var i in itens) {
+			console.log(itens[i])
+		}
+		console.log(`-----------------------`)
+		// foreach
+		itens.forEach(function(v,i,a){
+			console.log(v)
+		})
+		console.log(`-----------------------`)
+		// atividade: 
+		// incluir mais 5 elementos usando o unshift e push
+		// while e do while
+		itens.push(`Wordpress`)
+		itens.push(`Drupal`)
+		itens.push(`Magento`)
+		itens.unshift(`PagSeguro`)
+		itens.unshift(`Cielo`)
+
+		var x = 0
+		
+		while( x < itens.length ) {
+			console.log(itens[x])
+			x++
+		}
+		console.log(`-----------------------`)
+		x = 0
+
+		do {
+			console.log(itens[x])
+			x++
+		} while ( x < itens.length )
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
